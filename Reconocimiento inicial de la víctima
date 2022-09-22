@@ -1,0 +1,6 @@
+TTL = Información del sistema operativo
+
+nmap <IP> -p- --open -T5 -v -n -oG allPorts    -> Escaneo del sistema desde el puerto 1 al 65000, con velocidad T5, con verbose y que no me transmita resolución DNS, al fichero allPorts.
+
+
+nmap -sC -sV -p22.80 <IP> -oN targeted     \\\\ whatweb http://url 2>/dev/null -> Detección de versión y servicios con nmap
